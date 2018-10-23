@@ -1,6 +1,6 @@
 {
    "type" : "record",
-   "namespace" : "hortonworks.hdf.schema.refapp",
+   "namespace" : "hortonworks.hdf.schema.refapp.trucking",
    "name" : "TruckGeoEvent",
    "fields" : [
       { "name" : "eventTime" , "type" : "string" },

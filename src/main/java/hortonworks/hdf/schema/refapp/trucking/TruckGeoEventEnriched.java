@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package hortonworks.hdf.schema.refapp;
+package hortonworks.hdf.schema.refapp.trucking;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -6230465450739831104L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TruckGeoEventEnriched\",\"namespace\":\"hortonworks.hdf.schema.refapp\",\"fields\":[{\"name\":\"eventTime\",\"type\":\"string\"},{\"name\":\"eventTimeLong\",\"type\":\"long\",\"default\":0},{\"name\":\"eventSource\",\"type\":\"string\"},{\"name\":\"truckId\",\"type\":\"int\"},{\"name\":\"driverId\",\"type\":\"int\"},{\"name\":\"driverName\",\"type\":\"string\"},{\"name\":\"routeId\",\"type\":\"int\"},{\"name\":\"route\",\"type\":\"string\"},{\"name\":\"eventType\",\"type\":\"string\"},{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"correlationId\",\"type\":\"long\"},{\"name\":\"geoAddress\",\"type\":[\"string\",\"null\"],\"default\":\"No Address Available\"}]}");
+  private static final long serialVersionUID = -6330008039706652254L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TruckGeoEventEnriched\",\"namespace\":\"hortonworks.hdf.schema.refapp.trucking\",\"fields\":[{\"name\":\"eventTime\",\"type\":\"string\"},{\"name\":\"eventTimeLong\",\"type\":\"long\",\"default\":0},{\"name\":\"eventSource\",\"type\":\"string\"},{\"name\":\"truckId\",\"type\":\"int\"},{\"name\":\"driverId\",\"type\":\"int\"},{\"name\":\"driverName\",\"type\":\"string\"},{\"name\":\"routeId\",\"type\":\"int\"},{\"name\":\"route\",\"type\":\"string\"},{\"name\":\"eventType\",\"type\":\"string\"},{\"name\":\"latitude\",\"type\":\"double\"},{\"name\":\"longitude\",\"type\":\"double\"},{\"name\":\"correlationId\",\"type\":\"long\"},{\"name\":\"geoAddress\",\"type\":[\"string\",\"null\"],\"default\":\"No Address Available\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -358,8 +358,8 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
    * Creates a new TruckGeoEventEnriched RecordBuilder.
    * @return A new TruckGeoEventEnriched RecordBuilder
    */
-  public static hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder newBuilder() {
-    return new hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder();
+  public static hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder newBuilder() {
+    return new hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder();
   }
 
   /**
@@ -367,8 +367,8 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
    * @param other The existing builder to copy.
    * @return A new TruckGeoEventEnriched RecordBuilder
    */
-  public static hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder newBuilder(hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder other) {
-    return new hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder(other);
+  public static hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder newBuilder(hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder other) {
+    return new hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder(other);
   }
 
   /**
@@ -376,8 +376,8 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
    * @param other The existing instance to copy.
    * @return A new TruckGeoEventEnriched RecordBuilder
    */
-  public static hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder newBuilder(hortonworks.hdf.schema.refapp.TruckGeoEventEnriched other) {
-    return new hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder(other);
+  public static hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder newBuilder(hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched other) {
+    return new hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder(other);
   }
 
   /**
@@ -409,7 +409,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder other) {
+    private Builder(hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.eventTime)) {
         this.eventTime = data().deepCopy(fields()[0].schema(), other.eventTime);
@@ -469,7 +469,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
      * Creates a Builder by copying an existing TruckGeoEventEnriched instance
      * @param other The existing instance to copy.
      */
-    private Builder(hortonworks.hdf.schema.refapp.TruckGeoEventEnriched other) {
+    private Builder(hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.eventTime)) {
         this.eventTime = data().deepCopy(fields()[0].schema(), other.eventTime);
@@ -538,7 +538,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'eventTime'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setEventTime(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setEventTime(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.eventTime = value;
       fieldSetFlags()[0] = true;
@@ -558,7 +558,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'eventTime' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearEventTime() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearEventTime() {
       eventTime = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -577,7 +577,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'eventTimeLong'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setEventTimeLong(long value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setEventTimeLong(long value) {
       validate(fields()[1], value);
       this.eventTimeLong = value;
       fieldSetFlags()[1] = true;
@@ -597,7 +597,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'eventTimeLong' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearEventTimeLong() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearEventTimeLong() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -615,7 +615,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'eventSource'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setEventSource(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setEventSource(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.eventSource = value;
       fieldSetFlags()[2] = true;
@@ -635,7 +635,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'eventSource' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearEventSource() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearEventSource() {
       eventSource = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -654,7 +654,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'truckId'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setTruckId(int value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setTruckId(int value) {
       validate(fields()[3], value);
       this.truckId = value;
       fieldSetFlags()[3] = true;
@@ -674,7 +674,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'truckId' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearTruckId() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearTruckId() {
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -692,7 +692,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'driverId'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setDriverId(int value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setDriverId(int value) {
       validate(fields()[4], value);
       this.driverId = value;
       fieldSetFlags()[4] = true;
@@ -712,7 +712,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'driverId' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearDriverId() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearDriverId() {
       fieldSetFlags()[4] = false;
       return this;
     }
@@ -730,7 +730,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'driverName'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setDriverName(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setDriverName(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.driverName = value;
       fieldSetFlags()[5] = true;
@@ -750,7 +750,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'driverName' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearDriverName() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearDriverName() {
       driverName = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -769,7 +769,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'routeId'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setRouteId(int value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setRouteId(int value) {
       validate(fields()[6], value);
       this.routeId = value;
       fieldSetFlags()[6] = true;
@@ -789,7 +789,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'routeId' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearRouteId() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearRouteId() {
       fieldSetFlags()[6] = false;
       return this;
     }
@@ -807,7 +807,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'route'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setRoute(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setRoute(java.lang.CharSequence value) {
       validate(fields()[7], value);
       this.route = value;
       fieldSetFlags()[7] = true;
@@ -827,7 +827,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'route' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearRoute() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearRoute() {
       route = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -846,7 +846,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'eventType'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setEventType(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setEventType(java.lang.CharSequence value) {
       validate(fields()[8], value);
       this.eventType = value;
       fieldSetFlags()[8] = true;
@@ -866,7 +866,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'eventType' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearEventType() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearEventType() {
       eventType = null;
       fieldSetFlags()[8] = false;
       return this;
@@ -885,7 +885,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'latitude'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setLatitude(double value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setLatitude(double value) {
       validate(fields()[9], value);
       this.latitude = value;
       fieldSetFlags()[9] = true;
@@ -905,7 +905,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'latitude' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearLatitude() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearLatitude() {
       fieldSetFlags()[9] = false;
       return this;
     }
@@ -923,7 +923,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'longitude'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setLongitude(double value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setLongitude(double value) {
       validate(fields()[10], value);
       this.longitude = value;
       fieldSetFlags()[10] = true;
@@ -943,7 +943,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'longitude' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearLongitude() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearLongitude() {
       fieldSetFlags()[10] = false;
       return this;
     }
@@ -961,7 +961,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'correlationId'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setCorrelationId(long value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setCorrelationId(long value) {
       validate(fields()[11], value);
       this.correlationId = value;
       fieldSetFlags()[11] = true;
@@ -981,7 +981,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'correlationId' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearCorrelationId() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearCorrelationId() {
       fieldSetFlags()[11] = false;
       return this;
     }
@@ -999,7 +999,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * @param value The value of 'geoAddress'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder setGeoAddress(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder setGeoAddress(java.lang.CharSequence value) {
       validate(fields()[12], value);
       this.geoAddress = value;
       fieldSetFlags()[12] = true;
@@ -1019,7 +1019,7 @@ public class TruckGeoEventEnriched extends org.apache.avro.specific.SpecificReco
       * Clears the value of the 'geoAddress' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckGeoEventEnriched.Builder clearGeoAddress() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckGeoEventEnriched.Builder clearGeoAddress() {
       geoAddress = null;
       fieldSetFlags()[12] = false;
       return this;

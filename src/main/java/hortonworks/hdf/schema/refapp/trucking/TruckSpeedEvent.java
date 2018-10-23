@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package hortonworks.hdf.schema.refapp;
+package hortonworks.hdf.schema.refapp.trucking;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -7546906762838461367L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TruckSpeedEvent\",\"namespace\":\"hortonworks.hdf.schema.refapp\",\"fields\":[{\"name\":\"eventTime\",\"type\":\"string\"},{\"name\":\"eventTimeLong\",\"type\":\"long\",\"default\":0},{\"name\":\"eventSource\",\"type\":\"string\"},{\"name\":\"truckId\",\"type\":\"int\"},{\"name\":\"driverId\",\"type\":\"int\"},{\"name\":\"driverName\",\"type\":\"string\"},{\"name\":\"routeId\",\"type\":\"int\"},{\"name\":\"route\",\"type\":\"string\"},{\"name\":\"speed\",\"type\":\"int\"}]}");
+  private static final long serialVersionUID = -3624303105359499692L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"TruckSpeedEvent\",\"namespace\":\"hortonworks.hdf.schema.refapp.trucking\",\"fields\":[{\"name\":\"eventTime\",\"type\":\"string\"},{\"name\":\"eventTimeLong\",\"type\":\"long\",\"default\":0},{\"name\":\"eventSource\",\"type\":\"string\"},{\"name\":\"truckId\",\"type\":\"int\"},{\"name\":\"driverId\",\"type\":\"int\"},{\"name\":\"driverName\",\"type\":\"string\"},{\"name\":\"routeId\",\"type\":\"int\"},{\"name\":\"route\",\"type\":\"string\"},{\"name\":\"speed\",\"type\":\"int\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -274,8 +274,8 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
    * Creates a new TruckSpeedEvent RecordBuilder.
    * @return A new TruckSpeedEvent RecordBuilder
    */
-  public static hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder newBuilder() {
-    return new hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder();
+  public static hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder newBuilder() {
+    return new hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder();
   }
 
   /**
@@ -283,8 +283,8 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
    * @param other The existing builder to copy.
    * @return A new TruckSpeedEvent RecordBuilder
    */
-  public static hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder newBuilder(hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder other) {
-    return new hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder(other);
+  public static hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder newBuilder(hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder other) {
+    return new hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder(other);
   }
 
   /**
@@ -292,8 +292,8 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
    * @param other The existing instance to copy.
    * @return A new TruckSpeedEvent RecordBuilder
    */
-  public static hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder newBuilder(hortonworks.hdf.schema.refapp.TruckSpeedEvent other) {
-    return new hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder(other);
+  public static hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder newBuilder(hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent other) {
+    return new hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder(other);
   }
 
   /**
@@ -321,7 +321,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder other) {
+    private Builder(hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.eventTime)) {
         this.eventTime = data().deepCopy(fields()[0].schema(), other.eventTime);
@@ -365,7 +365,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
      * Creates a Builder by copying an existing TruckSpeedEvent instance
      * @param other The existing instance to copy.
      */
-    private Builder(hortonworks.hdf.schema.refapp.TruckSpeedEvent other) {
+    private Builder(hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.eventTime)) {
         this.eventTime = data().deepCopy(fields()[0].schema(), other.eventTime);
@@ -418,7 +418,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'eventTime'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder setEventTime(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder setEventTime(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.eventTime = value;
       fieldSetFlags()[0] = true;
@@ -438,7 +438,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'eventTime' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder clearEventTime() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder clearEventTime() {
       eventTime = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -457,7 +457,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'eventTimeLong'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder setEventTimeLong(long value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder setEventTimeLong(long value) {
       validate(fields()[1], value);
       this.eventTimeLong = value;
       fieldSetFlags()[1] = true;
@@ -477,7 +477,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'eventTimeLong' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder clearEventTimeLong() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder clearEventTimeLong() {
       fieldSetFlags()[1] = false;
       return this;
     }
@@ -495,7 +495,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'eventSource'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder setEventSource(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder setEventSource(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.eventSource = value;
       fieldSetFlags()[2] = true;
@@ -515,7 +515,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'eventSource' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder clearEventSource() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder clearEventSource() {
       eventSource = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -534,7 +534,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'truckId'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder setTruckId(int value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder setTruckId(int value) {
       validate(fields()[3], value);
       this.truckId = value;
       fieldSetFlags()[3] = true;
@@ -554,7 +554,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'truckId' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder clearTruckId() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder clearTruckId() {
       fieldSetFlags()[3] = false;
       return this;
     }
@@ -572,7 +572,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'driverId'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder setDriverId(int value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder setDriverId(int value) {
       validate(fields()[4], value);
       this.driverId = value;
       fieldSetFlags()[4] = true;
@@ -592,7 +592,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'driverId' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder clearDriverId() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder clearDriverId() {
       fieldSetFlags()[4] = false;
       return this;
     }
@@ -610,7 +610,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'driverName'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder setDriverName(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder setDriverName(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.driverName = value;
       fieldSetFlags()[5] = true;
@@ -630,7 +630,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'driverName' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder clearDriverName() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder clearDriverName() {
       driverName = null;
       fieldSetFlags()[5] = false;
       return this;
@@ -649,7 +649,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'routeId'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder setRouteId(int value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder setRouteId(int value) {
       validate(fields()[6], value);
       this.routeId = value;
       fieldSetFlags()[6] = true;
@@ -669,7 +669,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'routeId' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder clearRouteId() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder clearRouteId() {
       fieldSetFlags()[6] = false;
       return this;
     }
@@ -687,7 +687,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'route'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder setRoute(java.lang.CharSequence value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder setRoute(java.lang.CharSequence value) {
       validate(fields()[7], value);
       this.route = value;
       fieldSetFlags()[7] = true;
@@ -707,7 +707,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'route' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder clearRoute() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder clearRoute() {
       route = null;
       fieldSetFlags()[7] = false;
       return this;
@@ -726,7 +726,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * @param value The value of 'speed'.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder setSpeed(int value) {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder setSpeed(int value) {
       validate(fields()[8], value);
       this.speed = value;
       fieldSetFlags()[8] = true;
@@ -746,7 +746,7 @@ public class TruckSpeedEvent extends org.apache.avro.specific.SpecificRecordBase
       * Clears the value of the 'speed' field.
       * @return This builder.
       */
-    public hortonworks.hdf.schema.refapp.TruckSpeedEvent.Builder clearSpeed() {
+    public hortonworks.hdf.schema.refapp.trucking.TruckSpeedEvent.Builder clearSpeed() {
       fieldSetFlags()[8] = false;
       return this;
     }
